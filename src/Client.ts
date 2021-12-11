@@ -39,9 +39,9 @@ export class Client {
 
     constructor(
         configFilePath: string,
-        environment: string,
-        privateKey: string,
-        tokens: Tokens,
+        environment?: string,
+        privateKey?: string,
+        tokens?: Tokens,
     ) {
         try {
             // constructor with config file
