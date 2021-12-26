@@ -69,16 +69,16 @@ export interface InvoiceInterface {
     transactionCurrency: string | null;
     amountPaid: number | null;
     displayAmountPaid: number | null;
-    exchangeRates: Array<[string, Array<[string, number]>]> | null;
-    paymentSubtotals: Array<[string, number]> | null;
-    paymentTotals: Array<[string, number]> | null;
-    paymentDisplayTotals: Array<[string, number]> | null;
-    paymentDisplaySubTotals: Array<[string, number]> | null;
+    exchangeRates: Record<string, Record<string, number>> | null;
+    paymentSubtotals: Record<string, number> | null;
+    paymentTotals: Record<string, number> | null;
+    paymentDisplayTotals: Record<string, number> | null;
+    paymentDisplaySubTotals: Record<string, number> | null;
     nonPayProPaymentReceived: boolean | null;
     jsonPayProRequired: boolean | null;
     underpaidAmount: number | null;
     overpaidAmount: number | null;
-    paymentCodes: Array<[string, Array<[string, number]>]> | null;
+    paymentCodes: Record<string, Record<string, number>> | null;
 }
 
 export class Invoice implements InvoiceInterface {
@@ -142,16 +142,16 @@ export class Invoice implements InvoiceInterface {
     transactionCurrency: string | null;
     amountPaid: number | null;
     displayAmountPaid: number | null;
-    exchangeRates: Array<[string, Array<[string, number]>]> | null;
-    paymentSubtotals: Array<[string, number]> | null;
-    paymentTotals: Array<[string, number]> | null;
-    paymentDisplayTotals: Array<[string, number]> | null;
-    paymentDisplaySubTotals: Array<[string, number]> | null;
+    exchangeRates: Record<string, Record<string, number>> | null;
+    paymentSubtotals: Record<string, number> | null;
+    paymentTotals: Record<string, number> | null;
+    paymentDisplayTotals: Record<string, number> | null;
+    paymentDisplaySubTotals: Record<string, number> | null;
     nonPayProPaymentReceived: boolean | null;
     jsonPayProRequired: boolean | null;
     underpaidAmount: number | null;
     overpaidAmount: number | null;
-    paymentCodes: Array<[string, Array<[string, number]>]> | null;
+    paymentCodes: Record<string, Record<string, number>> | null;
 
     /**
      * Constructor, create a minimal request Invoice object.

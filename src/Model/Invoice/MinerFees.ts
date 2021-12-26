@@ -1,11 +1,11 @@
 import {MinerFeesItem} from "./MinerFeesItem";
 
 export interface MinerFees {
-    btc: MinerFeesItem;
-    bch: MinerFeesItem;
-    eth: MinerFeesItem;
-    usdc: MinerFeesItem;
-    gusd: MinerFeesItem;
-    pax: MinerFeesItem;
-    xrp: MinerFeesItem;
+    BTC: MinerFeesItem;
+    BCH: MinerFeesItem;
+    ETH: MinerFeesItem;
+    USDC: MinerFeesItem;
+    GUSD: MinerFeesItem;
+    PAX: MinerFeesItem;
+    XRP: MinerFeesItem;
 }
