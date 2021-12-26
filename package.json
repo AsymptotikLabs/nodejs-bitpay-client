@@ -1,12 +1,13 @@
 {
-  "name": "bitpay-sdk",
+  "name": "@atk/bitpay-sdk",
   "version": "1.4.2102",
   "description": "Complete version of the NodeJS library for the new cryptographically secure BitPay API",
   "main": "dist/index",
   "typings": "dist/index",
+  "prettier": true,
   "files": [
-    "dist/**/*.js",
-    "dist/index.d.ts",
+    "dist/src/**/*.js",
+    "dist/src/index.d.ts",
     "setup/BitPaySetup.js"
   ],
   "scripts": {
