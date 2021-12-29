@@ -4,7 +4,6 @@
   "description": "Complete version of the NodeJS library for the new cryptographically secure BitPay API",
   "main": "dist/index",
   "typings": "dist/index",
-  "prettier": true,
   "files": [
     "dist/src/**/*.js",
     "dist/src/index.d.ts",
@@ -12,6 +11,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && tsc -p ./tsconfig.json",
+    "compile": "tsc -p ./tsconfig.json",
     "coverage": "npm run unit -- --coverage",
     "format": "npm run prettier -- --write",
     "format:ci": "npm run prettier -- --check",
@@ -49,7 +49,7 @@
     "@types/bs58": "^4.0.0",
     "@types/elliptic": "^6.4.6",
     "@types/jest": "^24.0.13",
-    "@types/node": "^11.15.46",
+    "@types/node": "^16.11.7",
     "@types/puppeteer": "^1.20.7",
     "@types/request": "^2.48.5",
     "@types/request-promise": "^4.1.47",
