@@ -72,8 +72,8 @@ export interface InvoiceInterface {
     exchangeRates: Record<string, Record<string, number>> | null;
     paymentSubtotals: Record<string, number> | null;
     paymentTotals: Record<string, number> | null;
-    paymentDisplayTotals: Record<string, number> | null;
-    paymentDisplaySubTotals: Record<string, number> | null;
+    paymentDisplayTotals: Record<string, string> | null;
+    paymentDisplaySubTotals: Record<string, string> | null;
     nonPayProPaymentReceived: boolean | null;
     jsonPayProRequired: boolean | null;
     underpaidAmount: number | null;
@@ -145,8 +145,8 @@ export class Invoice implements InvoiceInterface {
     exchangeRates: Record<string, Record<string, number>> | null;
     paymentSubtotals: Record<string, number> | null;
     paymentTotals: Record<string, number> | null;
-    paymentDisplayTotals: Record<string, number> | null;
-    paymentDisplaySubTotals: Record<string, number> | null;
+    paymentDisplayTotals: Record<string, string> | null;
+    paymentDisplaySubTotals: Record<string, string> | null;
     nonPayProPaymentReceived: boolean | null;
     jsonPayProRequired: boolean | null;
     underpaidAmount: number | null;
