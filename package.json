@@ -49,7 +49,7 @@
         "@types/bs58": "^4.0.0",
         "@types/elliptic": "^6.4.6",
         "@types/jest": "^24.0.13",
-        "@types/node": "^16.11.7",
+        "@types/node": "^18.15.3",
         "@types/puppeteer": "^1.20.7",
         "@types/request": "^2.48.5",
         "@types/request-promise": "^4.1.47",
@@ -60,6 +60,6 @@
         "rimraf": "^2.6.3",
         "ts-jest": "^25.5.1",
         "tslint": "^5.16.0",
-        "typescript": "^4.5.4"
+        "typescript": "^5.2.2"
     }
 }
